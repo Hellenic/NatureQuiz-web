@@ -1,0 +1,16 @@
+<ul class="list-group col-md-offset-2 col-md-8 col-lg-8 col-sm-8" ng-repeat="category in categories | orderBy: 'name'">
+    <li class="list-group-item">
+            <h3>{{category.name}}</h3>
+            <p>{{category.description}}</p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                    aria-valuemin="0" aria-valuemax="100" aria-valuenow="{{category.progressPercent}}"
+                    style="width: {{category.progressPercent}}%;">
+                    {{category.progressPercent}}%
+                </div>
+            </div>
+            <a type="button" class="btn btn-primary btn-lg btn-block" href="categories/{{category.id}}">
+                {{loc.play_button}}
+            </a>
+    </li>
+</ul>

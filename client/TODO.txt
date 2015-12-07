@@ -1,0 +1,6 @@
+1. Synonyms
+2. Level specific texts
+3. Layout tuning
+
+#. Error handling
+#. Old browser support

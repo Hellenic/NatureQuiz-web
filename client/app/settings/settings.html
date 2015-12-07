@@ -1,0 +1,26 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<div ng-include="'components/banner/main.html'"></div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">{{loc.settings_text}}</h1>
+            <form>
+                <div class="form-group">
+                    <label for="locale-select">{{loc.settings_language}}</label>
+                    <select id="locale-select" class="form-control" ng-model="locale">
+                        <option value="en">{{loc.settings_locale_en}}</option>
+                        <option value="fi">{{loc.settings_locale_fi}}</option>
+                        <option value="ru">{{loc.settings_locale_ru}}</option>
+                    </select>
+
+                    <small>For debugging purposes only.</small><br />
+                    <button type="button" class="btn btn-warning" ng-click="reset()">Reset settings</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div ng-include="'components/footer/footer.html'"></div>
